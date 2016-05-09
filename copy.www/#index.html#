@@ -1,0 +1,107 @@
+<!-- My website -->
+
+<DOCTYPE HTML>
+<html>
+	<head>
+		<title> Grant Merrill's Portfolio</title>
+
+	</head>
+	<body>
+	  <table>
+	    <tr>
+	      <td><img src="websiteprofile.jpg" width="300" /></td>
+	      <td>
+		<h1 style="text-align:center"><strong>
+			GRANT EDWARD MERRILL
+		</strong></h1>
+		<h2 style="text-align:center">
+			Software Engineer
+		</h2>
+		<p style="text-align:center">
+		  (510) 684 8783
+		</p>
+		<p style="text-align:center">
+		  merrill.grant9@gmail.com
+		</p>
+		<p style="text-align:center">
+		  <a href= http://www.linkedin.com/in/grantmerrill>
+		    http://www.linkedin.com/in/grantmerrill
+		    </a>
+		  </p>
+		<p style="text-align:center">
+		  <a href=  http://www.codecademy.com/moonthroughglass>
+		    Check out my Code Academy progress.
+		    </a>
+		   </p>
+		<p style="text-align:center">
+		  <a href= https://github.com/Maelstroms>
+		    Check out my github.
+		    </a>
+		  </p>
+		<p style="text-align:center">
+		  <img src="http://projecteuler.net/profile/tail666.png"/>
+		  </p>
+		</td>
+		<td><img src="websitefam.jpg" width="600" /></td>
+		</tr>
+		    </table> 
+		<h3 style="text-align:center" >
+	 	  About me
+		  </h3>
+		<p style="text-align:center">
+		  Very versatile leader with strong training. Seeking to expand capabilities with technical field employment. Very interested in software structure and API. Experienced leading long term projects and delegating short term goals to team mates.
+
+Skilled in technical fields.
+		  </p>
+
+		<p>
+EDUCATION
+Northeastern University, College of Computer and Information Science, Boston, MA
+Candidate for Bachelor of Science, Computer Science         					           May 2017
+Related Courses: Discrete Structures, Fundamentals of Computer Science 1, Probability and Statistics
+G.P.A: 3.20
+
+Colorado College, Colorado Springs, CO
+Computer Science, Mandarin Chinese 							           2011-2013
+Related Courses: Computer Science 1, Linear Algebra, Calculus Accelerated
+G.P.A.: 3.3
+	     
+Beijing Cultural and Language University, Beijing, China 
+Chinese Language Studies									      	      2010
+	   
+COMPUTER SKILLS
+Languages: Python, Java, Scheme, Racket
+
+EXPERIENCE
+Colorado College, Colorado Springs				  		         Aug 2012-May 2013
+Residential Advisor
+•	Planned and facilitated activities like pizza parties and game nights to welcome freshmen to college.
+•	Ensured safety of students on campus by patrolling halls to find students that were in distress and enforcing college rules.
+Sigma Chi Fraternity, Beta Gamma Chapter, Colorado Springs			           Aug 2012-Jan 2013
+President
+•	Created fiscal stability for chapter by paying down debt and enforcing collection of membership dues.
+•	 Created a membership contract that enumerated member fiscal responsibilities and normalized bylaws.
+•	Organized operations of non-profit philanthropy, like organizing a workday with Habitat For Humanity.
+Civil Air Patrol, Concord, CA							           Feb 2011-July 2011
+Cadet Commander
+•	Managed a staff of 20 youths to translate ambiguities like recruitment, planning, and operations into concrete goals that were met in a six month time frame.
+•	Responsible for organizing activities for a group of up to 30 youths, such as search and rescue training.
+•	Increased membership by canvassing local schools, and organizing presentations.
+
+VOLUNTEER SERVICE
+Meals on Wheels of Berkeley	                          		       			         Dec 2009-June 2011
+Driver
+•	Provided meals for elderly members of my community
+ 
+
+LANGUAGE SKILLS
+French (fluent), Mandarin Chinese (conversational)
+
+INTERESTS
+Rugby, Fitness
+
+
+		</p>
+
+	</body>
+</html>
