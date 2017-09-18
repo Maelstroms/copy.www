@@ -13,7 +13,7 @@
                     .then(function (response) {
                         var user = response.data;
                         if (user._id) {
-                            $location.url("/player");
+                            $location.url("/profile/" + user._id);
                         } else {
                             vm.error = "User failed to create";
                         }

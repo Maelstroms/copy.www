@@ -8,7 +8,8 @@ module.exports = function() {
         lastName: String,
         emails: [String],
         phone: [String],
-    }, {collection: "rugby.user"});
+        admin: Boolean
+    }, {collection: "site.user"});
 
     return UserSchema
 };

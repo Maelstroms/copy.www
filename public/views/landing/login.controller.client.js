@@ -4,7 +4,7 @@
 (function () {
     angular
         .module("WebAppMaker")
-        .controller("LoginController", LoginController)
+        .controller("LoginController", LoginController);
 
     function LoginController($location, UserService) {
         var vm = this;
@@ -16,7 +16,7 @@
                     var user = response.data;
                     if (user._id) {
                         
-                        $location.url("/player");
+                        $location.url("/profile/" + user._id );
                     } else {
                         vm.error = "User not found";
                     }

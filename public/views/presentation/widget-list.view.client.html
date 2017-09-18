@@ -1,0 +1,63 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-footer">
+            <a class="navbar-brand" href="#!/login">
+                <scan class="glyphicon glyphicon-menu-left"></scan>
+            </a>
+            <a class="navbar-brand" href="#">
+                Widgets
+            </a>
+            <p class="navbar-text pull-right">
+                <a href=#!/user/{{model.route.uid}}/widget/new"
+                   class="navbar-link">
+                      <span class="glyphicon glyphicon-plus">
+                      </span>
+                </a>
+            </p>
+        </div>
+    </div>
+</nav>
+
+<div class="sortable-widgets" >
+    <div  ng-repeat="widget in model.widgets" ng-switch on="widget.widgetType">
+        <table width="100%">
+            <tr>
+                <td>
+                    <div ng-switch-when="HEADER">
+                        <ng-include src="'views/widget/widget-header.view.client.html'"></ng-include>
+                    </div>
+                    <div ng-switch-when="IMAGE">
+                        <ng-include src="'views/widget/widget-image.view.client.html'"></ng-include>
+                    </div>
+                    <div ng-switch-when="YOUTUBE">
+                        <ng-include src="'views/widget/widget-youtube.view.client.html'"></ng-include>
+                    </div>
+                    <div ng-switch-when="HTML">
+                        <div ng-bind-html="model.getSafeHtml(widget)"></div>
+                    </div>
+                </td>
+                <td class="pull-right">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    <a href="#/user/{{model.route.uid}}/website/{{model.route.wid}}/page/{{model.route.pid}}/widget/{{widget._id}}"
+                       >
+                        <span class="glyphicon glyphicon-cog"></span>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+        <div class="navbar-footer">
+            <p class="navbar-text pull-right">
+                <a href="#/profile/{{model.route.uid}}" class="navbar-link">
+                      <span class="glyphicon glyphicon-user">
+                      </span>
+                </a>
+            </p>
+        </div>
+    </div>
+</nav>

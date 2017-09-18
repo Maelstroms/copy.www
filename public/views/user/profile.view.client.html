@@ -9,29 +9,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Super Cool Title</a>
+                <a class="navbar-brand" href="#">The Imaginarium of Grant Merrill</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <form class="navbar-form navbar-right">
-                    <div class="form-group">
-                        <input ng-model="username" class="form-control"
-                               placeholder="username"
-                               type="text"/>
-                    </div>
-                    <div class="form-group">
-                        <input ng-model="password" class="form-control"
-                               placeholder="password"
-                               type="password">
-                    </div>
-                    <!--<a ng-click="model.login(username, password)" class="btn btn-primary">Login</a>-->
-                    <a ng-click="model.login(username, password)" class="btn btn-primary">Login</a>
-                </form>
+                <div class="navbar-center">
+                    <p ng-model="model.user.username">
+                       Welcome {{model.user.username}}
+                   </p>
+                </div>
+                <div class="navbar-right">
+                    <a type="submit" href="#!/login" class="btn btn-primary">Logout</a>
+                    <a type="submit" href="#!/profile/{{model.route.uid}}/settings" class="btn btn-success">Settings</a>
+                </div>
             </div><!--/.navbar-collapse -->
         </div>
     </nav>
 
 
     <div class="container">
+        <!-- Example row of columns -->
         <div class="row">
             <div class="col-md-6">
                 <h2>Most Recent Post</h2>
@@ -47,7 +43,7 @@
                 <div>
 
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
                 <p><a class="btn btn-default" href="dbms.html" role="button">View more &raquo;</a></p>
             </div>
         </div>
