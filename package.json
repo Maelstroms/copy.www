@@ -4,6 +4,7 @@
   "description": "Personal site",
   "main": "server.js",
   "dependencies": {
+    "bcrypt": "^1.0.3",
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
     "mongoose": "^4.4.15",
