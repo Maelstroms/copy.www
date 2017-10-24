@@ -23,6 +23,7 @@ module.exports = function() {
             next();
         })
     });
+    
 
     return UserSchema
 };

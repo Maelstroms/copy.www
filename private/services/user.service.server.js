@@ -1,5 +1,6 @@
 module.exports = function(app,models) {
     var userModel = models.userModel;
+    var session = require('express-session');
 
     app.post("/api/user", createUser);
     app.get("/api/user", getUsers);
@@ -7,6 +8,13 @@ module.exports = function(app,models) {
     app.get("/api/user/:userId", findUserById);
     app.put("/api/user/:userId", updateUser);
     app.delete("/api/user/:userId", deleteUser);
+
+    //use sessions for tracking logins
+    app.use(session({
+        secret: 'work hard',
+        resave: true,
+        saveUninitialized: false
+    }));
 
     function createUser(req, res) {
         var newUser = req.body;
