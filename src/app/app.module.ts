@@ -12,6 +12,8 @@ import { LandingPageComponent } from './views/landing-page/landing-page.componen
 import { BlogComponent } from './views/blog/blog.component';
 import { AdminLoginComponent } from './views/admin-login/admin-login.component';
 import { ProjectsComponent } from './views/projects/projects.component';
+import { BlogPostsComponent } from './views/blog-posts/blog-posts.component';
+import { BlogPostThumbnailComponent } from './views/blog-post-thumbnail/blog-post-thumbnail.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { ProjectsComponent } from './views/projects/projects.component';
     LandingPageComponent,
     BlogComponent,
     AdminLoginComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    BlogPostsComponent,
+    BlogPostThumbnailComponent
   ],
   imports: [
     BrowserModule,
