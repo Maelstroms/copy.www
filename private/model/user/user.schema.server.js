@@ -1,6 +1,6 @@
 module.exports = function() {
     var mongoose = require("mongoose");
-    var bcrypt = require('bcrypt');
+    var bcrypt = require('bcrypt-nodejs');
 
     var UserSchema = mongoose.Schema({
         username: String,
@@ -23,7 +23,11 @@ module.exports = function() {
             next();
         })
     });
-    
+
+  var authenticate = function(password){
+
+  };
+
 
     return UserSchema
 };

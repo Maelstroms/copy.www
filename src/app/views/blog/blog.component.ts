@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { UserClientService } from "../../services/user/user-client.service";
+import {SharedService} from "../../services/shared/shared.service";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-blog',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
-  constructor() { }
+  user = {};
+
+  constructor(
+    private activatedRoute : ActivatedRoute,
+    private sharedService: SharedService,
+    private userService: UserClientService) { }
 
   ngOnInit() {
+    console.log(this.sharedService.user);
+    this.activatedRoute.params
+      .subscribe(params => {
+        this.user = this.sharedService.user || {};
+      });
   }
 
 }
